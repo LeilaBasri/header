@@ -5,17 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header templates</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <!-- ---------------------------------------------- -->
-    
+    <style>
+    .top-Header{
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 80Px;
+        background-color: #000;
+        color: #fff;
+        box-shadow: 0 1px 5px 0 #000;
+        z-index: 100;
+    }
+    .left-Top-Header{
+        width: 80%;
+        justify-self: left;
+        margin: auto;
+        padding-left: 50px;
+    }
+    .left-Top-Header a{
+        display: inline-block;
+        color: #fff;
+        padding: 20px;
+        font-size: 20px;
+        background-color: transparent;
+    }
+    .left-Top-Header a:hover{color: red;}
+    .right-Top-Header{
+        width: 20%;
+        justify-self: right;
+    }
+    </style>
+    <h1>test</h1>
+    <header class="top-Header">
+        <div class="left-Top-Header">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">News</a>
+                <a href="#">About Us</a>
+                <a href="#">Contacts</a>
+            </nav>
+        </div>
+        <div class="right-Top-Header"><img src="Images/Leila.png" height="80px" width="auto"></div>
+    </header>
     <!-- ------------------- header  ---------------------------->
-
-    <div id="header-Container"></div>
-    <script>
-        $("#header-Container").load("Pages/header.html");
-    </script>
 
     <!-- ---------------   ---------------------------->
     <section class="templates-Btns">
