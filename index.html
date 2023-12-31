@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header templates</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
@@ -19,7 +20,7 @@
         <h1>Choose one of the header templates and change the header style</h1>
         <div class="btns-Container">
             <a href="#" class="template-Btn" onclick="fixedNavigation()">Fixed and Top Navigation</a>
-            <a href="#" class="template-Btn">Sidebar with Icons</a>
+            <a href="#" class="template-Btn" onclick="iconsSidebar()">Sidebar with Icons</a>
             <a href="#" class="template-Btn">Navbar with Icons</a>
             <a href="#" class="template-Btn">Full screen Overlay Navigation</a>
             <a href="#" class="template-Btn">Off-Canvas Menu</a>
@@ -40,10 +41,14 @@
     <script>
     function fixedNavigation(){
         $("#header-Container").load("templates/fixedNavigation.html");
-
     }   
     </script>
     <!-- ---------------   ---------------------------->
+    <script>
+        function iconsSidebar(){
+            $("#header-Container").load("templates/iconsSidebar.html");
+        }   
+    </script>
     <!-- ---------------   ---------------------------->
     <!-- ---------------   ---------------------------->
     <!-- ---------------   ---------------------------->

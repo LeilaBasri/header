@@ -1,0 +1,42 @@
+<style>
+body {font-family: "Lato", sans-serif;}
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+<header class="sidebar">
+    <div class=""><img src="Images/Leila.png" height="80px" width="auto"></div>
+    <div class="">
+        <nav>
+            <a href="#"><i class="fa fa-fw fa-home"></i>Home</a>
+            <a href="#"><i class="fa fa-fw fa-wrench"></i>News</a>
+            <a href="#"><i class="fa fa-fw fa-user"></i>About Us</a>
+            <a href="#"><i class="fa fa-fw fa-envelope"></i>Contacts</a>
+        </nav>
+    </div>
+</header>
