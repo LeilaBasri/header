@@ -20,6 +20,8 @@ a{
 /********************************************************/
 .main-Container{
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 .templates-Btns{
     background-color: aliceblue;
