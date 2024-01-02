@@ -1,9 +1,11 @@
 <style>
-body {font-family: "Lato", sans-serif;}
+body {
+    font-family: "Lato", sans-serif;
+    position: relative;
+}
 #header-Container, .sidebar {
   height: 100%;
   width: 160px;
-  display: flex;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -31,17 +33,11 @@ body {font-family: "Lato", sans-serif;}
 }
 </style>
 <style>
-    body{
-        display: flex !important;
-        flex-direction: column !important;
-    }
     .main-Container{
         width: 70% !important;
-        display: flex !important;
-        flex-direction: row !important;
-        justify-self: right !important;
+        position: absolute;
         left: 160px !important;
-        justify-self: right !important;
+        top: 0 !important;
     }
 </style>
 <header class="sidebar">
