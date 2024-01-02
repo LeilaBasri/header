@@ -29,6 +29,7 @@ a{
     width: 100%;
     min-height: 200px;
     padding: 50px;
+    display: block;
 }
 .btns-Container{
     display: flex;
