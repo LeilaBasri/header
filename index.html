@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-<body>
+<body id="body-Container">
     
     <!-- ------------------- header  ---------------------------->
     <div id="header-Container"></div>
@@ -47,6 +47,8 @@
     <script>
         function iconsSidebar(){
             $("#header-Container").load("templates/iconsSidebar.html");
+            document.getElementById("body-Container").style.display="flex";
+            document.getElementById("body-Container").style.flexDirection="column";
             document. getElementById("templates-Btns").style.width="70% !important";
         }   
     </script>
