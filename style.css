@@ -18,6 +18,9 @@ a{
 /********************************************************/
 #header-Container{width: 100%; height: 80px;}
 /********************************************************/
+.main-Container{
+    width: 100%;
+}
 .templates-Btns{
     background-color: aliceblue;
     width: 100%;
