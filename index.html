@@ -24,7 +24,7 @@
             <div class="btns-Container">
                 <a href="#" class="template-Btn" onclick="fixedNavigation()">Fixed and Top Navigation</a>
                 <a href="#" class="template-Btn" onclick="iconsSidebar()">Sidebar with Icons</a>
-                <a href="#" class="template-Btn">Navbar with Icons</a>
+                <a href="#" class="template-Btn" onclick="navbarIcons()">Navbar with Icons</a>
                 <a href="#" class="template-Btn">Full screen Overlay Navigation</a>
                 <a href="#" class="template-Btn">Off-Canvas Menu</a>
                 <a href="#" class="template-Btn">Hoverable Sidenav Buttons</a>
@@ -56,6 +56,11 @@
         }   
     </script>
     <!-- ---------------   ---------------------------->
+    <script>
+        function navbarIcons(){
+            $("#header-Container").load("templates/navbar-Icons.html");  
+        }
+    </script>
     <!-- ---------------   ---------------------------->
     <!-- ---------------   ---------------------------->
     <!-- ---------------   ---------------------------->   
