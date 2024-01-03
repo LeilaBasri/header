@@ -30,12 +30,12 @@
                 <a href="#" class="template-Btn" onclick="offCanvasMenu()">Off-Canvas Menu</a>
                 <a href="#" class="template-Btn" onclick="hoverableSidenavButtons()">Hoverable Sidenav Buttons</a>
                 <a href="#" class="template-Btn" onclick="bottomNavigation()">Bottom Navigation Bar</a>
-                <a href="#" class="template-Btn">Bottom Border Nav Links</a>
-                <a href="#" class="template-Btn">Right Aligned Menu Links</a>
-                <a href="#" class="template-Btn">Slide Down a Bar</a>
-                <a href="#" class="template-Btn">Hide Menu on Scroll</a>
-                <a href="#" class="template-Btn">Shrink Navbar on Scroll</a>
-                <a href="#" class="template-Btn">Sticky Navbar</a>
+                <a href="#" class="template-Btn" onclick="bottomBorderNav()">Bottom Border Nav Links</a>
+                <a href="#" class="template-Btn" onclick="rightAlignedMenu()">Right Aligned Menu Links</a>
+                <a href="#" class="template-Btn" onclick="">Slide Down a Bar</a>
+                <a href="#" class="template-Btn" onclick="">Hide Menu on Scroll</a>
+                <a href="#" class="template-Btn" onclick="">Shrink Navbar on Scroll</a>
+                <a href="#" class="template-Btn" onclick="">Sticky Navbar</a>
             </div>
         </section>
 
@@ -92,8 +92,18 @@
             $("#header-Container").load("templates/bottom-Navigation.html");
         }
     </script>
+    <!-- ---------------   ---------------------------->
+    <script> 
+        function bottomBorderNav(){
+            $("#header-Container").load("templates/bottom-BorderNav.html");  
+        }
+    </script> 
     <!-- ---------------   ---------------------------->  
-    <!-- ---------------   ---------------------------->  
+    <script> 
+        function rightAlignedMenu(){
+            $("#header-Container").load("templates/right-Aligned-Menu.html");  
+        }
+    </script>
     <!-- ---------------   ---------------------------->  
     <!-- ---------------   ---------------------------->  
     <!-- ---------------   ---------------------------->  
