@@ -34,7 +34,7 @@
                 <a href="#" class="template-Btn" onclick="rightAlignedMenu()">Right Aligned Menu Links</a>
                 <a href="#" class="template-Btn" onclick="slideDownOnScroll()">Slide Down a Bar</a>
                 <a href="#" class="template-Btn" onclick="hideNavbarOnScrollDown()">Hide Menu on Scroll Down</a>
-                <a href="#" class="template-Btn" onclick="">Shrink Navbar on Scroll</a>
+                <a href="#" class="template-Btn" onclick="shrinkNavMenuOnScroll()">Shrink Navbar on Scroll</a>
                 <a href="#" class="template-Btn" onclick="">Sticky Navbar</a>
             </div>
         </section>
@@ -116,7 +116,12 @@
             $("#header-Container").load("templates/hideNavbar-OnScrollDown.html");  
         }
     </script>
-    <!-- ---------------   ---------------------------->  
+    <!-- ---------------   ---------------------------->
+    <script> 
+        function shrinkNavMenuOnScroll(){
+            $("#header-Container").load("templates/shrinkNavMenu-OnScroll.html");  
+        }
+    </script>
     <!-- ---------------   ---------------------------->  
 </body>
 </html>
