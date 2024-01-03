@@ -35,7 +35,7 @@
                 <a href="#" class="template-Btn" onclick="slideDownOnScroll()">Slide Down a Bar</a>
                 <a href="#" class="template-Btn" onclick="hideNavbarOnScrollDown()">Hide Menu on Scroll Down</a>
                 <a href="#" class="template-Btn" onclick="shrinkNavMenuOnScroll()">Shrink Navbar on Scroll</a>
-                <a href="#" class="template-Btn" onclick="">Sticky Navbar</a>
+                <a href="#" class="template-Btn" onclick="stickyNavbar()">Sticky Navbar</a>
             </div>
         </section>
 
@@ -123,5 +123,12 @@
         }
     </script>
     <!-- ---------------   ---------------------------->  
+    <script> 
+        function stickyNavbar(){
+            $("#header-Container").load("templates/stickyNavbar.html");  
+        }
+    </script>
+    <!-- ---------------   ---------------------------->
+
 </body>
 </html>
