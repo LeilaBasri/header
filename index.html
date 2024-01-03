@@ -28,8 +28,8 @@
                 <a href="#" class="template-Btn" onclick="fullScreenOverlayNav()">Full screen Overlay Navigation</a>
                 <a href="#" class="template-Btn" onclick="overlayNavSlideDown()">Slide Down Overlay Navigation</a>
                 <a href="#" class="template-Btn" onclick="offCanvasMenu()">Off-Canvas Menu</a>
-                <a href="#" class="template-Btn">Hoverable Sidenav Buttons</a>
-                <a href="#" class="template-Btn">Bottom Navigation Bar</a>
+                <a href="#" class="template-Btn" onclick="hoverableSidenavButtons()">Hoverable Sidenav Buttons</a>
+                <a href="#" class="template-Btn" onclick="">Bottom Navigation Bar</a>
                 <a href="#" class="template-Btn">Bottom Border Nav Links</a>
                 <a href="#" class="template-Btn">Right Aligned Menu Links</a>
                 <a href="#" class="template-Btn">Slide Down a Bar</a>
@@ -81,6 +81,11 @@
         }
     </script>  
     <!-- ---------------   ---------------------------->  
+    <script>
+        function hoverableSidenavButtons(){
+            $("#header-Container").load("templates/hoverable-SidenavButtons.html");
+        }
+    </script>
     <!-- ---------------   ---------------------------->  
     <!-- ---------------   ---------------------------->  
     <!-- ---------------   ---------------------------->  
