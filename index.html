@@ -25,7 +25,7 @@
                 <a href="#" class="template-Btn" onclick="fixedNavigation()">Fixed and Top Navigation</a>
                 <a href="#" class="template-Btn" onclick="iconsSidebar()">Sidebar with Icons</a>
                 <a href="#" class="template-Btn" onclick="navbarIcons()">Navbar with Icons</a>
-                <a href="#" class="template-Btn">Full screen Overlay Navigation</a>
+                <a href="#" class="template-Btn" onclick="fullScreenOverlayNav()">Full screen Overlay Navigation</a>
                 <a href="#" class="template-Btn">Off-Canvas Menu</a>
                 <a href="#" class="template-Btn">Hoverable Sidenav Buttons</a>
                 <a href="#" class="template-Btn">Bottom Navigation Bar</a>
@@ -62,6 +62,11 @@
         }
     </script>
     <!-- ---------------   ---------------------------->
+    <script>
+        function fullScreenOverlayNav(){
+            $("#header-Container").load("templates/fullScreen-OverlayNav.html");
+        }
+    </script>
     <!-- ---------------   ---------------------------->
     <!-- ---------------   ---------------------------->   
 </body>
