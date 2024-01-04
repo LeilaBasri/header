@@ -101,8 +101,8 @@ function fixedNavigation(){
 
 
  
-    function s(){
-        $("#header-Container").load("templates/s.html");  
+    function dropdownMenuInNavbar(){
+        $("#header-Container").load("templates/dropdownMenu-InNavbar.html");  
     }
 
 
