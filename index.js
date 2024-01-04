@@ -107,8 +107,8 @@ function fixedNavigation(){
 
 
  
-    function s(){
-        $("#header-Container").load("templates/s.html");  
+    function dropdownSidebar(){
+        $("#header-Container").load("templates/dropdown-Sidebar.html");  
     }
 
 
