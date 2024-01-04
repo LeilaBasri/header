@@ -1,10 +1,17 @@
 <style>
+    .btn-container{
+        position: relative;
+    }
     .dropbtn {
-      background-color: #04AA6D;
+      background-color: #000000;
       color: white;
       padding: 16px;
       font-size: 16px;
       border: none;
+      border-radius: 5px;
+      position: absolute;
+      right: 100px;
+      top: 50px;
     }
     
     .dropdown {
@@ -35,11 +42,13 @@
     .dropdown:hover .dropbtn {background-color: #3e8e41;}
     </style>
     
+<div class="btn-container">
     <div class="dropdown">
-      <button class="dropbtn">Contact US</button>
-      <div class="dropdown-content">
-        <a href="#">Email</a>
-        <a href="#">Instagram</a>
-        <a href="#">Linked IN</a>
+        <button class="dropbtn">Contact US</button>
+        <div class="dropdown-content">
+          <a href="#">Email</a>
+          <a href="#">Instagram</a>
+          <a href="#">Linked IN</a>
+        </div>
       </div>
-    </div>
+</div>
