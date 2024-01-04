@@ -95,8 +95,8 @@ function fixedNavigation(){
 
 
  
-    function s(){
-        $("#header-Container").load("templates/s.html");  
+    function clickableDropdown(){
+        $("#header-Container").load("templates/clickable-Dropdown.html");  
     }
 
 
