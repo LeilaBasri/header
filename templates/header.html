@@ -29,16 +29,68 @@
         width: 20%;
         justify-self: right;
     }
-
    </style>
-   <header class="top-Header">
+   <style>
+    @media screen and (max-width: 600px) {
+  .top-Header a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .top-Header a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .top-Header.responsive {position: relative;}
+  .top-Header.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .top-Header.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .top-Header.responsive .dropdown {float: none;}
+  .top-Header.responsive .dropdown-content {position: relative;}
+  .top-Header.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+   </style>
+   <header class="top-Header" id="top-Header">
         <div class="left-Top-Header">
             <nav>
                 <a href="#">Home</a>
                 <a href="#">News</a>
                 <a href="#">About Us</a>
-                <a href="#">Contacts</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Contacts 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Email</a>
+                      <a href="#">Linked In</a>
+                      <a href="#">Instagram</a>
+                    </div>
+                  </div> 
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsiveMenu()">&#9776;</a>
             </nav>
         </div>
         <div class="right-Top-Header"><img src="Images/Leila.png" height="80px" width="auto"></div>
     </header>
+
+    <script>
+        function responsiveMenu() {
+          var x = document.getElementById("top-Header");
+          if (x.className === "top-Header") {
+            x.className += " responsive";
+          } else {
+            x.className = "top-Header";
+          }
+        }
+        </script>
